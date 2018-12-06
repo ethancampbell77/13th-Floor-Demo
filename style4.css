@@ -17,6 +17,13 @@ body {
     margin-left: 10%;
 }
 
+/* Clearfix */
+div.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 /* Banner Style */
 header {
     color: rgb(212, 200, 200);
@@ -30,13 +37,9 @@ header {
     margin-left: 1%;
 }
 
-.buttons {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    overflow: hidden;
-    color: rgb(212, 200, 200);
+a.buttons {
     font-weight: bolder;
+    float: left;
     margin-bottom: 2%;
     padding: 18px 10px;
     width: 33%;
@@ -45,9 +48,20 @@ header {
     cursor: pointer;
 }
 
-.buttons:hover {
- color: rgb(241, 221, 107);
-}
+a.buttons:link {
+    color: rgb(187, 180, 180);
+  }
+  
+a.buttons:visited {
+    color: rgb(136, 129, 118);
+  }
+a.buttons:hover {
+    color: rgb(59, 59, 61);
+  }
+  
+a.buttons:active {
+    color: rgba(8, 8, 8, 0.363);
+  }
 
 .discogs {
     display: block;

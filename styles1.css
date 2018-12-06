@@ -14,9 +14,7 @@
 
 /* Overall Body style */
 body {
-background-color: #74624A
-;
-color: black;
+background-color: #74624A;
 font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -43,13 +41,9 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Navigation Button style*/
-.buttons {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    overflow: hidden;
-    color: rgb(49, 49, 33);
-    text-shadow: .5px .5px beige;
+a.buttons {
+    float: left;
+    text-shadow: 2px 2px rgb(44, 38, 5);
     font-weight: bolder;
     padding: 18px 10px;
     width: 33%;
@@ -58,33 +52,30 @@ font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
 
-
-/* unvisited link */
-.buttons:link {
-    color:beige;
+ /* unvisited link */
+a.buttons:link {
+    color: beige;
   }
   
   /* visited link */
-  .buttons:visited {
-    color: brown;
+ a:visited {
+    color: beige;
   }
   
   /* mouse over link */
-  .buttons:hover {
-    color: rgb(207, 145, 176);
+ a:hover {
+    color: rgba(8, 8, 8, 0.363);
   }
   
   /* selected link */
-  .buttons:active {
-    color: red;
+  a:active {
+    color: beige;
   }
 
-
-.navPanal {
+  .navPanal {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border-style: 1% solid b#261B1B;
     position: absolute;
     top: 50%;
     left: 50%;

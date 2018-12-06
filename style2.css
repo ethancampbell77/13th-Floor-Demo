@@ -53,11 +53,10 @@ header {
     padding: 0px;
 }
 
-.buttons {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    overflow: hidden;
+/* Site Navigation*/
+
+a.buttons {
+    float: left;
     color: rgb(212, 200, 200);
     font-weight: bolder;
     margin-bottom: 90px;
@@ -68,9 +67,21 @@ header {
     cursor: pointer;
 }
 
-.buttons:hover {
- color: rgb(241, 221, 107);
-}
+a.buttons:link {
+    color: rgb(187, 180, 180);
+  }
+  
+a.buttons:visited {
+    color: rgb(136, 129, 118);
+  }
+a.buttons:hover {
+    color: rgb(59, 59, 61);
+  }
+  
+a.buttons:active {
+    color: rgba(8, 8, 8, 0.363);
+  }
+
 
 
 
